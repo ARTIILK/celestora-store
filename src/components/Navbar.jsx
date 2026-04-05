@@ -6,7 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ShoppingCart, Menu, RefreshCcw } from "lucide-react";
 import { useState } from "react";
 import { CartDrawer } from "./CartDrawer";
-import { SkinViewer3D } from "@/components/SkinViewer3D";
+import { SkinHeadLogo } from "@/components/SkinHeadLogo";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -40,15 +40,8 @@ export function Navbar() {
               {isConfigLoading ? (
                 <Skeleton className="w-10 h-10 rounded-xl bg-primary/20 shrink-0" />
               ) : (
-                <div className="shrink-0 w-10 h-10 rounded-xl overflow-hidden ring-1 ring-white/10 group-hover:scale-110 transition-transform duration-300 bg-black/30">
-                  <SkinViewer3D
-                    width={40}
-                    height={40}
-                    showButtons={false}
-                    enableControls={false}
-                    zoom={1.38}
-                    className="[&>canvas]:rounded-xl"
-                  />
+                <div className="group-hover:scale-110 transition-transform duration-300">
+                  <SkinHeadLogo />
                 </div>
               )}
               <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors duration-300 hidden sm:block">
