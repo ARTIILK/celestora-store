@@ -7,9 +7,9 @@ export const mockData = {
     currency: ["INR", "USD"],
     defaultCurrency: "INR",
     theme: {
-      primary: "#10b981", // Emerald
+      primary: "#d946a6", // Magenta/Pink-Purple
       secondary: "#0a0a0a",
-      accent: "#f59e0b", // Gold
+      accent: "#fbbf24", // Gold
       background: "#050505"
     },
     backgroundAnimation: {
