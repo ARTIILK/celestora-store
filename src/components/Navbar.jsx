@@ -6,6 +6,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ShoppingCart, Menu, RefreshCcw } from "lucide-react";
 import { useState } from "react";
 import { CartDrawer } from "./CartDrawer";
+import { SkinViewer3D } from "@/components/SkinViewer3D";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -37,19 +38,17 @@ export function Navbar() {
           <div className="flex-shrink-0 flex items-center gap-3">
             <Link href="/" className="flex items-center gap-3 group cursor-pointer">
               {isConfigLoading ? (
-                <Skeleton className="w-10 h-10 rounded-xl bg-primary/20" />
-              ) : config?.logo ? (
-                <img
-                  src={config.logo}
-                  alt={config.serverName}
-                  className="w-10 h-10 rounded-xl object-cover group-hover:scale-110 transition-transform duration-300"
-                  onError={(e) => {
-                    e.target.src = 'https://ui-avatars.com/api/?name=' + (config.serverName || 'MC') + '&background=random';
-                  }}
-                />
+                <Skeleton className="w-10 h-10 rounded-xl bg-primary/20 shrink-0" />
               ) : (
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-bold group-hover:scale-110 transition-transform duration-300">
-                  MC
+                <div className="shrink-0 w-10 h-10 rounded-xl overflow-hidden ring-1 ring-white/10 group-hover:scale-110 transition-transform duration-300 bg-black/30">
+                  <SkinViewer3D
+                    width={40}
+                    height={40}
+                    showButtons={false}
+                    enableControls={false}
+                    zoom={1.38}
+                    className="[&>canvas]:rounded-xl"
+                  />
                 </div>
               )}
               <span className="font-display font-bold text-xl tracking-tight text-white group-hover:text-primary transition-colors duration-300 hidden sm:block">

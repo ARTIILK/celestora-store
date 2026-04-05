@@ -1,4 +1,4 @@
-import { Switch, Route } from "wouter";
+import { Switch, Route, useRoute } from "wouter";
 import { queryClient } from "@/lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -14,6 +14,18 @@ import { ThreeBackground } from "@/components/ThreeBackground";
 import { ThemeInjector } from "@/components/ThemeInjector";
 import { useEffect } from "react";
 import { useStore } from "@/lib/store";
+import { SkinViewer3D } from "@/components/SkinViewer3D";
+
+/** Renders the interactive skin viewer on the home route only (example usage). */
+function HomeSkinViewerDemo() {
+  const [isHome] = useRoute("/");
+  if (!isHome) return null;
+  return (
+    <div className="relative z-20 flex w-full justify-center px-4 pt-28 pb-6">
+      <SkinViewer3D />
+    </div>
+  );
+}
 
 function Router() {
   const { fetchExchangeRate } = useStore();
@@ -25,6 +37,7 @@ function Router() {
   return (
     <div className="min-h-screen flex flex-col relative z-0">
       <Navbar />
+      <HomeSkinViewerDemo />
       <main className="flex-1 w-full relative z-10">
         <Switch>
           <Route path="/" component={Home} />
