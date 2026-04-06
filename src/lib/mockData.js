@@ -43,7 +43,7 @@ export const mockData = {
       priceINR: 1200,
       priceUSD: 14.50,
       description: "A fresh Minecraft redeem code to get the full game on your account.",
-      image: "https://ui-avatars.com/api/?name=Code&background=10b981&color=fff",
+      image: "/mine.webp",
       featured: true,
       stock: "Limited Stock",
       checkoutURL: "#"
@@ -55,7 +55,7 @@ export const mockData = {
       priceINR: 550,
       priceUSD: 6.99,
       description: "Stable and secure premium account with full access.",
-      image: "https://ui-avatars.com/api/?name=Acc&background=10b981&color=fff",
+      image: "/creep.webp",
       featured: true,
       stock: "In Stock",
       checkoutURL: "#"
@@ -67,7 +67,7 @@ export const mockData = {
       priceINR: 600,
       priceUSD: 7.50,
       description: "Instant delivery of a Discord Nitro gift link.",
-      image: "https://ui-avatars.com/api/?name=Nitro&background=5865F2&color=fff",
+      image: "/nitro.png",
       featured: true,
       stock: "In Stock",
       checkoutURL: "#"
@@ -103,7 +103,7 @@ export const mockData = {
       priceINR: 2000,
       priceUSD: 24.99,
       description: "Limited stock of highly exclusive and rare usernames.",
-      image: "https://ui-avatars.com/api/?name=OG&background=fbbf24&color=fff",
+      image: "/og.webp",
       featured: true,
       stock: "Low Stock",
       checkoutURL: "#"
@@ -115,7 +115,7 @@ export const mockData = {
       priceINR: 850,
       priceUSD: 10.50,
       description: "Accounts confirmed ready to play on Hypixel.",
-      image: "https://ui-avatars.com/api/?name=HYP&background=fbbf24&color=fff",
+      image: "/hipix.webp",
       featured: true,
       stock: "In Stock",
       checkoutURL: "#"
