@@ -1,7 +1,7 @@
 import { useSiteConfig } from "@/hooks/use-store-data";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { Copy, Terminal, Gamepad2, Disc } from "lucide-react";
+import { Copy, Terminal, Gamepad2, Disc, Globe } from "lucide-react";
 
 export function Footer() {
   const { data: config } = useSiteConfig();
@@ -80,17 +80,34 @@ export function Footer() {
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} {config?.serverName || "Minecraft Server"}. All rights reserved.
           </p>
-          <p className="text-xs text-muted-foreground/70">
-            Developed by{" "}
-            <a 
-              href="https://aurtx.vercel.app/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="font-medium hover:text-primary transition-colors"
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs text-muted-foreground/70">
+              Developed by{" "}
+              <a 
+                href="https://aurtx.vercel.app/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-medium hover:text-primary transition-colors"
+              >
+                aurtx aka prince prasad
+              </a>
+            </p>
+            <Button
+              variant="link"
+              size="sm"
+              asChild
+              className="h-auto p-0 -mt-1 text-xs text-muted-foreground hover:text-primary hover:bg-transparent"
             >
-              aurtx
-            </a>
-          </p>
+              <a
+                href="https://aurtx.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Globe className="w-3 h-3 mr-1 inline" />
+                Portfolio
+              </a>
+            </Button>
+          </div>
 
           <p className="text-xs text-muted-foreground/60 text-center sm:text-right max-w-sm">
             Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
