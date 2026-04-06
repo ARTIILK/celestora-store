@@ -121,18 +121,6 @@ export const mockData = {
       checkoutURL: "#"
     },
     {
-      id: "pvp_smp_ready",
-      name: "PvP / Lifesteal / SMP Ready Accounts",
-      categoryId: "upgrades-extras",
-      priceINR: 750,
-      priceUSD: 8.99,
-      description: "High-quality accounts ready for active survival and PvP servers.",
-      image: "https://ui-avatars.com/api/?name=PvP&background=fbbf24&color=fff",
-      featured: false,
-      stock: "In Stock",
-      checkoutURL: "#"
-    },
-    {
       id: "fresh_gifted",
       name: "Fresh & Gifted Accounts",
       categoryId: "upgrades-extras",
