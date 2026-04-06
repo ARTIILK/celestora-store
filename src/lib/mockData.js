@@ -79,7 +79,7 @@ export const mockData = {
       priceINR: 350,
       priceUSD: 4.50,
       description: "Clean and stylish custom capes for your character.",
-      image: "https://ui-avatars.com/api/?name=Cape&background=fbbf24&color=fff",
+      image: "./cape.png",
       featured: false,
       stock: "In Stock",
       checkoutURL: "#"
@@ -91,7 +91,7 @@ export const mockData = {
       priceINR: 450,
       priceUSD: 5.99,
       description: "Stand out with unique cosmetics and cloaks in-game.",
-      image: "https://ui-avatars.com/api/?name=Cos&background=fbbf24&color=fff",
+      image: "./ccape.png",
       featured: false,
       stock: "In Stock",
       checkoutURL: "#"
@@ -127,7 +127,7 @@ export const mockData = {
       priceINR: 650,
       priceUSD: 7.99,
       description: "Brand new accounts, perfect for starting your journey fresh.",
-      image: "https://ui-avatars.com/api/?name=Gift&background=fbbf24&color=fff",
+      image: "./gcm.jpg",
       featured: false,
       stock: "In Stock",
       checkoutURL: "#"
@@ -139,7 +139,7 @@ export const mockData = {
       priceINR: 500,
       priceUSD: 6.50,
       description: "Get a custom resource pack tailored to your aesthetic preferences.",
-      image: "https://ui-avatars.com/api/?name=Pack&background=fbbf24&color=fff",
+      image: "./cmtr.jpg",
       featured: false,
       stock: "In Stock",
       checkoutURL: "#"
