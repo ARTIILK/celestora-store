@@ -76,9 +76,22 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} {config?.serverName || "Minecraft Server"}. All rights reserved.
           </p>
+          <p className="text-xs text-muted-foreground/70">
+            Developed by{" "}
+            <a 
+              href="https://aurtx.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="font-medium hover:text-primary transition-colors"
+            >
+              aurtx
+            </a>
+          </p>
+
           <p className="text-xs text-muted-foreground/60 text-center sm:text-right max-w-sm">
             Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.
           </p>
